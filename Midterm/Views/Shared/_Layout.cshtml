@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+    <header>
+        <h1>&#128509; &#128509; &#128509; &#128509; ✅ Come To Leran , Go To Serve ✅ &#128509; &#128509; &#128509; &#128509;</h1>
+    </header>
+    <nav class="navbar bg-body-tertiary">
+        <a class="navbar-brand" href="/">
+            <img src="~/images/book.jpg" alt="Logo" style="height: 40px;" />
+            Book Management
+        </a>
+
+        <form class="container-fluid justify-content-start">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-outline-success me-2">Home</a>
+            <a asp-controller="Book" asp-action="AddBook" class="btn btn-outline-success me-2">Add Book</a>
+            <a asp-controller="Member" asp-action="AddMember" class="btn btn-outline-success me-2">Add Member</a>
+            <a asp-controller="Book" asp-action="Booklist" class="btn btn-outline-success me-2">BookList</a>
+            <a asp-controller="Member" asp-action="Memberlist" class="btn btn-outline-success me-2">MemberList</a>
+            <a asp-controller="Book" asp-action="IssueBook" class="btn btn-outline-success me-2">Assign Book</a>
+            <a asp-controller="Book" asp-action="ReturnBook" class="btn btn-outline-success me-2">Unassign Book</a>
+        </form>
+    </nav>
+    <div>
+        @RenderBody()
+        @RenderSection("Scripts", required: false)
+    </div>
+</body>
+</html>
+<footer>
+    <p> Thanks For Visiting Us || Baljindersingh3973@conestogac.on.ca </p>
+    &copy; Baljinder Singh ,8913973
+</footer>
+

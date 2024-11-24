@@ -1,0 +1,82 @@
+﻿@model SearchViewModel
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Sidebar for Filters and Sorting -->
+        <aside class="col-md-3 col-lg-2">
+            <h4>Filters</h4>
+
+            <!-- Search Form -->
+            <form method="get" asp-action="Memberlist">
+                <div class="form-group">
+                    <label for="searchTerm">Search</label>
+                    <input type="text" id="searchTerm" name="searchTerm" value="@Model.SearchTerm" class="form-control" placeholder="Search for books..." />
+                </div>
+
+                <!-- Filter by Genre -->
+                <h5>Genre</h5>
+                <div class="list-group mb-3">
+                    <a asp-action="Memberlist" asp-route-genre="" class="list-group-item list-group-item-action @(string.IsNullOrEmpty(Model.SelectedGenre) ? "active" : "")">All Genres</a>
+                    @foreach (var genre in Model.Genres)
+                    {
+                        <a asp-action="Memberlist" asp-route-genre="@genre" class="list-group-item list-group-item-action @(genre == Model.SelectedGenre ? "active" : "")">
+                            @genre
+                        </a>
+                    }
+                </div>
+
+                <!-- Sort Options -->
+                <h5>Sort By</h5>
+                <div class="list-group mb-3">
+                    <a asp-action="Memberlist" asp-route-sortBy="title" class="list-group-item list-group-item-action @(Model.SortBy == "title" ? "active" : "")">Title</a>
+                    <a asp-action="Memberlist" asp-route-sortBy="author" class="list-group-item list-group-item-action @(Model.SortBy == "author" ? "active" : "")">Author</a>
+                    <a asp-action="Memberlist" asp-route-sortBy="year" class="list-group-item list-group-item-action @(Model.SortBy == "year" ? "active" : "")">Year</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!-- Main Content Area for Book Results -->
+        <main class="col-md-9 col-lg-10">
+            <h2>Search Results</h2>
+
+            @if (Model.Books.Count == 0)
+            {
+                <p>No books found.</p>
+            }
+            else
+            {
+
+                <div class="container mt-5">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="table-dark">
+
+                                <th>Title</th>
+                                <th>Auther</th>
+                                <th>Genre</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var member in Model.Members)
+                            {
+                                <tr class="table-light">
+
+                                    <td>@member.Name</td>
+                                    <td>@member.Name</td>
+                                    <td>@member.Name</td>
+                                    <td>@member.Name</td>
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+
+                </div>
+            }
+        </main>
+    </div>
+</div>
+

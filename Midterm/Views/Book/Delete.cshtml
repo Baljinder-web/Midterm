@@ -1,0 +1,22 @@
+﻿@model Book;
+
+@{
+    ViewData["Title"] = "Delete Book";
+}
+
+
+
+
+<h2>Delete Book</h2>
+
+<p>Are you sure you want to delete the book "<strong>@Model.Title</strong>" by @Model.Author? Which was published in @Model.Year </p>
+
+
+<form method="post" asp-action="Delete" asp-route-id="@Model.BookId">
+
+    <button type="submit" class="btn btn-danger">Confirm Deletion</button>
+
+    <a asp-controller="Book" asp-action="AddBook" class="btn btn-secondary">Cancel</a>
+
+</form>
+

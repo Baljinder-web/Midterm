@@ -1,0 +1,84 @@
+﻿@model Book;
+
+@{
+    ViewData["Title"] = "New Book";
+}
+
+
+<h2> Add Your New Book</h2>
+
+
+
+<div class="container mt-5">
+
+   
+    <form asp-controller="Book" asp-action="AddBook" method="post" class="row g-3">
+
+        <div asp-validation-summary="All"></div>
+
+        <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col-12">
+                <label asp-for="Title" class="form-label"> Title Of Book:</label>
+                <input type="text" asp-for="Title" class="form-control" placeholder="Enter Book Name" />
+                <span asp-validation-for="Title" class="Alert-Danger"></span>
+            </div>
+        </div>
+
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col-12">
+                <label asp-for="Author" class="form-label"> Book Author:</label>
+                <input type="text" asp-for="Author" class="form-control" placeholder="Author Name" />
+                <span asp-validation-for="Author" class="Alert-Danger"></span>
+            </div>
+
+        </div>
+
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div>
+                <label asp-for="GenreId" class="form-label">Genre</label>
+                <select asp-for="GenreId" class="form-select">
+                    <option value="">Choose Genre</option>
+                    @foreach (var Genre in ViewBag.Genres)
+                    {
+                        <option value="@Genre.GenreId">@Genre.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div>
+                <label asp-for="Year" class="form-label">Year Of Publication:</label>
+                <input type="text" asp-for="Year" class="form-control" placeholder="Publication Year" />
+                <span asp-validation-for="Year" class="Alert-Danger"></span>
+            </div>
+        </div>
+
+
+        <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col-12">
+                <div class="form-check">
+                    <label asp-for=" IsAvailability ">Availability of Book:</label>
+                    <input type="checkbox" asp-for=" IsAvailability " />
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a asp-controller="Book" class="btn btn-secondary" asp-action="AddBook">Clear</a>
+        </div>
+
+    </form>
+    <a asp-controller="Book" asp-action="Booklist" class="btn btn-secondary">All Books</a>
+
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+﻿@model Member;
+
+@{
+    ViewData["Title"] = "Unassign";
+}
+
+<h2>Return Book</h2>
+<p>Are you sure you want to unassign the book?</p>
+
+
+<form asp-action="UnassignBook" method="post">
+    <div class="form-group">
+        <label for="memberId">Select a Member:</label>
+        <select id="memberId" name="memberId" class="form-control" required>
+            <option value="">Choose Member to unassign Book</option>
+            @foreach (var member in ViewBag.MembersWithBooks)
+            {
+                <option value="@member.MemberId">@member.Name</option>
+            }
+        </select>
+    </div>
+
+    <button asp-controller="Book" type="submit" class="btn btn-primary">Unassign Book</button>
+    <a asp-controller="Book" asp-action="Booklist" class="btn btn-secondary">Cancel</a>
+</form>

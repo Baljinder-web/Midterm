@@ -1,0 +1,24 @@
+﻿@model Member;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Delete";
+}
+}
+<h2>
+
+   This is Confirmation  page for deleting Member @Model.Name , To do So Please Follow the below Steps!!
+
+</h2>
+
+<form asp-action="Delete" method="post">
+    <div class="alert alert-danger" role="alert">
+        Member Name :@Model.Name   is  will be deleted from every location!! 
+
+        <p> If You want to continue to Delete,Please click on Confirm  button !!</p>
+    </div>
+    <input type="hidden" asp-for="MemberId" />
+    <button type="submit" class="btn btn-primary">Delete</button>
+    <a  asp-controller="Member" asp-action="Memberlist" class="btn btn-secondary">Cancel</a> 
+</form>
