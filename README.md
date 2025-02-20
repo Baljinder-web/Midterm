@@ -79,30 +79,47 @@ Admin panel
    3. Select the "Delete" , then confirmation page will display.
    4. Select "Confirm deletation" to delete or for going back then select "Cancel".
    5. If delete option selected then system will delete Member and then it will lead you to the "Addmember" page to add new Member.
-8. Admin can assign book to members
+8. Assign book to members
    1. Select "Assign book".
    2. Then on this page "Select the book" and "Select the member" whom to issue book.
    3. Click on "Assign Book" and book will be assigned to that member.
    4. To go back select "cancel" if you do not wnat to assign book.
-9. Admin can Unassign book to members
+9. Unassign book to members
    1. Select "Unassign book".
    2. Then on this page "Select the member" whom to Unassign book.
    3. Click on "Unassign Book" and book will be Unassigned to that member.
    4. To go back select "cancel" if you do not wnat to Unassign book.
-12. Admin can update their profile.
+10. Update profile.
     1. Select "Profile" from navigation bar.
     2. System will display a form with current details.
     3. Update the details and click on "Update profile".
     4. Message for Successful updates will be displayed at the bottom.
+11. For logout,  Select button from navigation bar "Logout".
+12. For homepage , Select button from navigation bar "Home".
 
 
 Member panel:
 1. Members can see all books as a list.
-2. Members can assign book to them.
-3. They can unassign book as well from them.
-4. They can also update their profile.
-5. One homepage they can see some updates like newly added books in the form of slides.
-6. They can search books according the author, title, year, availablility, genre or they can filter books.
+   1. Select the option "Booklist" from navigation bar.
+   2. System will show all books.
+   3. Check the books by using the search or filter options.
+2. Assign book
+   1. Select "Assign book" from navigation bar.
+   2. Then on this page "Select the book" and "Select the membem" , Select your name to issue book.
+   3. Click on "Assign Book" and book will be assigned to you.
+   4. To go back select "Cancel" if you do not wnat to assign book.
+3. Unassign book 
+   1. Select "Unassign book" from navigation bar.
+   2. Then on this page "Select the member", Select your name to Unassign book.
+   3. Click on "Unassign Book" and book will be Unassigned to you.
+   4. To go back select "Cancel" if you do not wnat to Unassign book.
+4. Update profile.
+    1. Select "Profile" from navigation bar.
+    2. System will display a form with current details.
+    3. Update the details and click on "Update profile".
+    4. Message for Successful updates will be displayed at the bottom.
+5. For logout,  Select button from navigation bar "Logout".
+6. For homepage , Select button from navigation bar "Home".
 
 
 
