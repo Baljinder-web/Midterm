@@ -167,3 +167,19 @@
 
 #   Contact Information:
  ### Email: BaljinderSingh3973@conestogac.on.ca 
+
+# License
+
+Here is the link for License: 
+
+## Why this particular kind of license "MIT License" selected?
+
+#### I have selected the MIT License due to below mentioned reasons:
+
+1. Freedom: It allows to use, change, and share the code without any restrictions.
+2. Minimal Rules: It has less strict rules,thus it allows more people to contribute.
+3. Legal protection: It defends me from any legal issues related to the code that can occur.
+4. Collaboration: It promotes open-source contributions for users.
+
+You can read the full MIT License in the LICENSE file.
+
