@@ -99,27 +99,35 @@ Admin panel
 
 
 Member panel:
-1. Members can see all books as a list.
+1. Login:
+   1. Enter the username name and password.
+   2. System will retrieve details and show the member homepage.
+2.Register:
+   1. Click on the "Register" option  at the top of login page.
+   2. Enter alll requierd details,'
+   3. Click on "Register" button.
+   4. System will show login page and then login with newly added username and password.
+3. Members can see all books as a list.
    1. Select the option "Booklist" from navigation bar.
    2. System will show all books.
    3. Check the books by using the search or filter options.
-2. Assign book
+4. Assign book
    1. Select "Assign book" from navigation bar.
    2. Then on this page "Select the book" and "Select the membem" , Select your name to issue book.
    3. Click on "Assign Book" and book will be assigned to you.
    4. To go back select "Cancel" if you do not wnat to assign book.
-3. Unassign book 
+5. Unassign book 
    1. Select "Unassign book" from navigation bar.
    2. Then on this page "Select the member", Select your name to Unassign book.
    3. Click on "Unassign Book" and book will be Unassigned to you.
    4. To go back select "Cancel" if you do not wnat to Unassign book.
-4. Update profile.
+6. Update profile.
     1. Select "Profile" from navigation bar.
     2. System will display a form with current details.
     3. Update the details and click on "Update profile".
     4. Message for Successful updates will be displayed at the bottom.
-5. For logout,  Select button from navigation bar "Logout".
-6. For homepage , Select button from navigation bar "Home".
+7. For logout,  Select button from navigation bar "Logout".
+8. For homepage , Select button from navigation bar "Home".
 
 
 
