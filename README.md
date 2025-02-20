@@ -170,9 +170,9 @@
 
 # License
 
-Here is the link for License: 
-
 ## Why this particular kind of license "MIT License" selected?
+
+Link for the License file:https://github.com/Baljinder-web/Midterm/blob/master/LICENSE
 
 #### I have selected the MIT License due to below mentioned reasons:
 
