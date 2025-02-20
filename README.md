@@ -15,8 +15,26 @@ Installation Guide: Follow the below steps to run this project:
 12. It will open the website for you.
 13. Then you can register as a user and explore the "Book Management Web".
     
-Technologies Used:  Visual Studio ASP.NET Core, Entity Framework, Bootstrap, etc
-Usage Instructions: 
-Features:
+Technologies Used:  Visual Studio ASP.NET Core, Entity Framework, Bootstrap, etc.
+
+Features: Admin panel 
+1. Admin can Add book and Add member
+2. Admin can Edit book details as well as member details.
+3. Admin can Delete book and member.
+4. Admin can assign book to members 
+5. Admin can Unassign book to members     
+6. Admin can update their profile
+7. Admin can see booklist and memberlist.
+8. They can search books according the author, title, year, availablility, genre or they can filter books.
+   
+Member panel:
+1. Members can see all books as a list.
+2. Members can assign book to them.
+3. They can unassign book as well from them.
+4. They can also update their profile.
+5. One homepage they can see some updates like newly added books in the form of slides.
+6. They can search books according the author, title, year, availablility, genre or they can filter books.
+  
 Contributing Guidelines:
+
 License: 
